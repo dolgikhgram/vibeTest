@@ -6,7 +6,7 @@
   "homepage": "https://dolgikhgram.github.io/vibeTest/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && touch dist/.nojekyll",
+    "build": "tsc && vite build && echo '' > dist/.nojekyll && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "predeploy": "npm run build",
